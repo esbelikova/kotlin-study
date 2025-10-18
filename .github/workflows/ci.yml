@@ -30,3 +30,42 @@ jobs:
       - name: Сборка и тесты
         run: |
           ./gradlew build --no-daemon
+
+  build-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout кода
+        uses: actions/checkout@v4
+
+      - name: Установка Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Генерация документации Dokka
+        run: |
+          ./gradlew dokkaHtml
+          mkdir -p temp-dokka
+          # Копируем ВСЁ содержимое, включая структуру и скрытые файлы
+          cp -r build/dokka/html/. temp-dokka/
+
+      - name: Подготовка финальной папки docs
+        run: |
+          # Подготавливаем временную папку
+          rm -rf temp-docs
+          mkdir -p temp-docs
+          # Копируем свои .md файлы (если есть)
+          cp -r docs/*.md temp-docs/ || echo "Нет .md файлов — пропускаем"
+          # Копируем сгенерированную документацию
+          cp -r temp-dokka/* temp-docs/
+          # Перемещаем в финальную папку
+          rm -rf docs
+          mv temp-docs docs
+
+      - name: Опубликовать документацию на GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
