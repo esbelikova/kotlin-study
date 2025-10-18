@@ -1,0 +1,37 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:fileIO////PointingToDeclaration/kotlin-study/fileIO/index.html
+$dokka.location:fileIO//main/#/PointingToDeclaration/kotlin-study/fileIO/main.html
+$dokka.location:fileIO//readFile/#kotlin.String/PointingToDeclaration/kotlin-study/fileIO/read-file.html
+$dokka.location:org.example.collections////PointingToDeclaration/kotlin-study/org.example.collections/index.html
+$dokka.location:org.example.collections//findMostFrequentWord/#java.util.ArrayList[kotlin.Int]/PointingToDeclaration/kotlin-study/org.example.collections/find-most-frequent-word.html
+$dokka.location:org.example.collections//main/#/PointingToDeclaration/kotlin-study/org.example.collections/main.html
+$dokka.location:org.example.collections//wordsCounter/#kotlin.String/PointingToDeclaration/kotlin-study/org.example.collections/words-counter.html
+$dokka.location:org.example.collections/CollectionsOldJavaToKotlin///PointingToDeclaration/kotlin-study/org.example.collections/-collections-old-java-to-kotlin/index.html
+$dokka.location:org.example.collections/CollectionsOldJavaToKotlin/CollectionsOldJavaToKotlin/#/PointingToDeclaration/kotlin-study/org.example.collections/-collections-old-java-to-kotlin/-collections-old-java-to-kotlin.html
+$dokka.location:org.example.collections/CollectionsOldJavaToKotlin/countDuplicates/#kotlin.collections.List[kotlin.String]/PointingToDeclaration/kotlin-study/org.example.collections/-collections-old-java-to-kotlin/count-duplicates.html
+$dokka.location:org.example.collections/CollectionsOldJavaToKotlin/findMinDate/#kotlin.collections.List[java.time.LocalDate]/PointingToDeclaration/kotlin-study/org.example.collections/-collections-old-java-to-kotlin/find-min-date.html
+$dokka.location:org.example.collections/CollectionsOldJavaToKotlin/listWithoutDuplicates/#kotlin.collections.List[kotlin.String]/PointingToDeclaration/kotlin-study/org.example.collections/-collections-old-java-to-kotlin/list-without-duplicates.html
+$dokka.location:org.example.collections/CollectionsOldJavaToKotlin/removeEvenNumbers/#kotlin.collections.MutableList[kotlin.Int]/PointingToDeclaration/kotlin-study/org.example.collections/-collections-old-java-to-kotlin/remove-even-numbers.html
+$dokka.location:org.example.collections/CollectionsOldJavaToKotlin/reverseStrings/#kotlin.collections.MutableList[kotlin.String]/PointingToDeclaration/kotlin-study/org.example.collections/-collections-old-java-to-kotlin/reverse-strings.html
+$dokka.location:org.example.syntax////PointingToDeclaration/kotlin-study/org.example.syntax/index.html
+$dokka.location:org.example.syntax//main/#/PointingToDeclaration/kotlin-study/org.example.syntax/main.html
+$dokka.location:org.example.syntax/Person///PointingToDeclaration/kotlin-study/org.example.syntax/-person/index.html
+$dokka.location:org.example.syntax/Person/Person/#kotlin.String#kotlin.Int/PointingToDeclaration/kotlin-study/org.example.syntax/-person/-person.html
+$dokka.location:org.example.syntax/Person/age/#/PointingToDeclaration/kotlin-study/org.example.syntax/-person/age.html
+$dokka.location:org.example.syntax/Person/checkAgeCategory/#/PointingToDeclaration/kotlin-study/org.example.syntax/-person/check-age-category.html
+$dokka.location:org.example.syntax/Person/introduce/#/PointingToDeclaration/kotlin-study/org.example.syntax/-person/introduce.html
+$dokka.location:org.example.syntax/Person/name/#/PointingToDeclaration/kotlin-study/org.example.syntax/-person/name.html
+$dokka.location:org.example.titov////PointingToDeclaration/kotlin-study/org.example.titov/index.html
+$dokka.location:org.example.titov/Calculator///PointingToDeclaration/kotlin-study/org.example.titov/-calculator/index.html
+$dokka.location:org.example.titov/Calculator/add/#kotlin.Int#kotlin.Int/PointingToDeclaration/kotlin-study/org.example.titov/-calculator/add.html
+$dokka.location:org.example.titov/Calculator/divide/#kotlin.Int#kotlin.Int/PointingToDeclaration/kotlin-study/org.example.titov/-calculator/divide.html
+$dokka.location:org.example.titov/Calculator/multiply/#kotlin.Int#kotlin.Int/PointingToDeclaration/kotlin-study/org.example.titov/-calculator/multiply.html
+$dokka.location:org.example////PointingToDeclaration/kotlin-study/org.example/index.html
+$dokka.location:org.example//main/#/PointingToDeclaration/kotlin-study/org.example/main.html
+fileIO
+org.example
+org.example.collections
+org.example.syntax
+org.example.titov
+
