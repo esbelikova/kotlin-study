@@ -1,5 +1,11 @@
 $dokka.format:html-v1
 $dokka.linkExtension:html
+$dokka.location:////PointingToDeclaration/kotlin-study/[root]/index.html
+$dokka.location:/MathUtils///PointingToDeclaration/kotlin-study/[root]/-math-utils/index.html
+$dokka.location:/MathUtils/add/#kotlin.Int#kotlin.Int/PointingToDeclaration/kotlin-study/[root]/-math-utils/add.html
+$dokka.location:/MathUtils/addSample/#/PointingToDeclaration/kotlin-study/[root]/-math-utils/add-sample.html
+$dokka.location:/MathUtils/isEven/#kotlin.Int/PointingToDeclaration/kotlin-study/[root]/-math-utils/is-even.html
+$dokka.location:/MathUtils/max/#kotlin.Int#kotlin.Int/PointingToDeclaration/kotlin-study/[root]/-math-utils/max.html
 $dokka.location:fileIO////PointingToDeclaration/kotlin-study/fileIO/index.html
 $dokka.location:fileIO//main/#/PointingToDeclaration/kotlin-study/fileIO/main.html
 $dokka.location:fileIO//readFile/#kotlin.String/PointingToDeclaration/kotlin-study/fileIO/read-file.html
