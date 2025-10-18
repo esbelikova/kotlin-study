@@ -1,0 +1,61 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: 
+      - '**'
+  pull_request:
+    branches:
+      - main
+      - development
+      - release
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout кода
+        uses: actions/checkout@v4
+
+      - name: Установка Java (Kotlin требует JVM)
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Установка Gradle
+        uses: gradle/gradle-build-action@v2
+
+      - name: Сборка проекта
+        run: ./gradlew build
+
+      - name: Запуск тестов
+        run: ./gradlew test
+
+      - name: Проверка стиля кода (опционально)
+        run: ./gradlew ktlintCheck
+
+  build-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout кода
+        uses: actions/checkout@v4
+
+      - name: Установка Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      - name: Генерация документации Dokka
+        run: |
+          ./gradlew dokkaHtml
+          mkdir -p docs
+          cp -r build/dokka/html/* docs/
+
+      - name: Опубликовать документацию на GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
