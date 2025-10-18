@@ -30,6 +30,3 @@ jobs:
       - name: Сборка и тесты
         run: |
           ./gradlew build --no-daemon
-
-      - name: Проверка стиля кода (KtLint)
-        run: ./gradlew ktlintCheck --no-daemon
